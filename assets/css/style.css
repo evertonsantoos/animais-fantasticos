@@ -278,7 +278,18 @@ body {
   }
 
   to {
-    max-height:200px;
+    max-height: 200px;
     opacity: 1;
   }
+}
+
+.js .js-scrooll {
+  opacity: 0;
+  transform: matrix3d(-30, 0, 0);
+  transition: 0.3s;
+}
+
+.js .js-scrooll.ativo {
+  opacity: 1;
+  transform: matrix3d(0, 0, 0);
 }
