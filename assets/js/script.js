@@ -1,26 +1,18 @@
-function somaImagens() {
-  const imgs = document.querySelectorAll("img");
-  let soma = 0;
-  imgs.forEach((imagem) => {
-    soma = soma + imagem.offsetWidth;
-  });
+const tabMenu = document.querySelectorAll(".js-tabmenu li");
+const tabContent = document.querySelectorAll(".js-tabcontent section");
+tabContent[0].classList.add("ativo");
 
-  console.log(soma);
-}
-
-window.onload = function () {
-  somaImagens();
-};
-
-const links = document.querySelectorAll("a");
-
-links.forEach((link) => {
-  const linkWidth = link.offsetWidth;
-  const linkHeight = link.offsetHeight;
-
-  if (linkWidth >= 48 && linkHeight >= 48) {
-    console.log(link, "Possui acessibilidade");
-  } else {
-    link, "Não possui acessibilidade";
+if (tabMenu.length && tabContent.length) {
+  function activeTab(index) {
+    tabContent.forEach((section) => {
+      section.classList.remove("ativo");
+    });
+    tabContent[index].classList.add("ativo");
   }
-});
+
+  tabMenu.forEach((itemMenu, index) => {
+    itemMenu.addEventListener("click", () => {
+      activeTab(index);
+    });
+  });
+}
