@@ -142,6 +142,7 @@ body {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: #e54;
+  cursor: pointer;
 }
 
 .faq-lista dt::before {
@@ -283,13 +284,13 @@ body {
   }
 }
 
-.js .js-scrooll {
+.js .js-scroll {
   opacity: 0;
   transform: matrix3d(-30, 0, 0);
   transition: 0.3s;
 }
 
-.js .js-scrooll.ativo {
+.js .js-scroll.ativo {
   opacity: 1;
   transform: matrix3d(0, 0, 0);
 }
