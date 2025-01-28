@@ -13,10 +13,6 @@ Após clonar o repositório do professor, fiz as modificações necessárias par
 - Everton - Desenvolvedor que finalizou o projeto
 - André Rafael - Criador do projeto original
 
-## Como Funciona
-
-Este repositório contém o código completo do projeto, incluindo a parte do projeto original fornecido pelo professor e as alterações feitas por mim para concluir as funcionalidades pendentes.
-
 ## Agradecimentos
 
 Agradeço ao professor André Rafael pelo material disponibilizado no curso e pela base que me permitiu terminar o projeto com sucesso.
